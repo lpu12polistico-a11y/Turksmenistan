@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Country of Turkmenistan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Turkmenistan</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="activities.html">Activities</a>
+      <a href="travel-guide.html">Food</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Turkmenistan Deserts</h1>
+    <p>The Hidden Paradise of Turkmenistan</p>
+    <a href="destinations.html" class="apple-btn">Explore</a>
+  </div>
+</section>
+
+<!-- SECTION 1 -->
+<section class="section fade-in">
+  <h2>Geography is Nature's Perfected</h2>
+  <p>Experience crystal-clear desert, untouched sands, and breathtaking views.</p>
+</section>
+
+<img class="image-full fade-in" src="https://i.pinimg.com/736x/1e/2e/6a/1e2e6a66b1dfcebd10e736a1c3958a60.jpg">
+
+<!-- SECTION 2 -->
+<section class="section fade-in">
+  <h2>Language and Culture Awaits</h2>
+  <p>Renowned Culture of carpet-making, and equestrian traditions centered on the Akhal-Teke horse. The official language is Turkmen, a Turkic language closely related to Turkish.</p>
+</section>
+
+<img class="image-full fade-in" src="https://www.advantour.com/img/turkmenistan/culture/turkmenistan-music-dances.jpg">
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

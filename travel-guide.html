@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Turkmenistan</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="activities.html">Activities</a>
+      <a href="travel-guide.html">Food</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Plan Your Cultural Food Trip</h2>
+</section>
+
+<img class="image-full fade-in" src="https://ayan-turkmenistan.travel/wp-content/uploads/2024/05/snapinsta.app_370890939_258818843707081_205509723631756473_n_1080.jpg">
+<section class="section fade-in">
+  <h2>Local Cuisine</h2>
+  <p>"Dograma"the national dish, it consists of boiled mutton, onions, and freshly baked bread broken into pieces, all mixed together</p>
+</section>
+
+<img class="image-full fade-in" src="https://www.whats4eats.com/wp-content/uploads/2024/03/meats-shashlik-flickr-vlsergey-4885369895-4x3-1.jpg">
+<section class="section fade-in">
+  <h2>Shashlik</h2>
+  <p>Skewered and grilled meat—typically lamb—served with onions, often found as a staple street food.</p>
+</section>
+
+<img class="image-full fade-in" src="https://s.yimg.com/ny/api/res/1.2/W_8kP46yfRxlfYJIp0mAqg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTg1NztjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2025-11/6112fc80-bfb7-11f0-9f1f-c1541ba44861">
+<section class="section fade-in">
+  <h2>Tips</h2>
+  <p>Travel light. Bring cash. Respect the Country.</p>
+</section>
+
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+</body>
+</html>

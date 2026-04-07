@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Destinations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Turkmenistan</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="activities.html">Activities</a>
+      <a href="travel-guide.html">Food</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Top 5 Destinations</h2>
+</section>
+
+<img class="image-full fade-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Darvasa_gas_crater_panorama.jpg/1920px-Darvasa_gas_crater_panorama.jpg">
+
+<section class="section fade-in">
+  <h2>Darvaza Gas Crater</h2>
+  <p>"Gates of Hell," is a continuously burning 70-meter-wide crater in Turkmenistan's Karakum Desert.</p>
+</section>
+
+<img class="image-full fade-in" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Turkmenistan_Merv_city.jpg">
+
+<section class="section fade-in">
+  <h2>Ancient Merv</h2>
+  <p>A UNESCO World Heritage site that was once one of the world's largest cities on the Silk Road</p>
+</section>
+
+<img class="image-full fade-in" src="https://eurasia.travel/wp-content/uploads/2024/08/Kow-Ata-Lake-5.jpg">
+
+<section class="section fade-in">
+  <h2>Kow Ata Underground Lake </h2>
+  <p>A warm, geothermal lake inside a natural Cave formations.</p>
+</section>
+
+
+<img class="image-full fade-in" src="https://www.remotelands.com/remotenew1/dist/images/country/turkmenistan/city/14121401/b170808012.jpg">
+
+<section class="section fade-in">
+  <h2>Yangykala Canyon</h2>
+  <p>Rock formations and stunning views.</p>
+</section>
+
+
+<img class="image-full fade-in" src="https://trvlland.com/wp-content/uploads/2024/11/turkmenistan_ashgabat_turkmenbashi-ruhy-mosque.jpg">
+
+<section class="section fade-in">
+  <h2>Gypjak Mosque</h2>
+  <p>One of the largest mosques in Central Asia.</p>
+</section>
+
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+</body>
+</html>

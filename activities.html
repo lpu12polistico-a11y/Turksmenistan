@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Turkmenistan</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="activities.html">Activities</a>
+      <a href="travel-guide.html">Food</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <h2>Things to Do</h2>
+  <p>Every moment is an experience.</p>
+</section>
+
+<img class="image-full fade-in" src="https://www.youngpioneertours.com/wp-content/uploads/2020/06/kow-ata.jpg">
+
+<section class="section fade-in">
+  <h2>Cave Swimming</h2>
+  <p>Discover hidden gems across the Deserts.</p>
+</section>
+
+<img class="image-full fade-in" src="https://novastan.org/en/wp-content/uploads/sites/8/2024/12/IMG_4786-scaled.jpeg">
+
+<section class="section fade-in">
+  <h2>Tolkuchka Bazaar</h2>
+  <p>experience local life, view traditional Turkmen carpets, and see the famous Akhal-Teke horses.</p>
+</section>
+
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if(position < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+</script>
+</body>
+</html>
